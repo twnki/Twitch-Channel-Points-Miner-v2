@@ -5,6 +5,7 @@ ARG BUILDX_QEMU_ENV
 WORKDIR /usr/src/app
 
 COPY ./requirements.txt ./
+COPY ./run.py ./
 
 ENV CRYPTOGRAPHY_DONT_BUILD_RUST=1
 
